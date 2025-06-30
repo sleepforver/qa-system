@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+<div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+    <h2 class="text-2xl font-bold mb-6 text-center">注册</h2>
+    <form th:action="@{/register}" method="post" th:object="${user}">
+        <div class="mb-4">
+            <label class="block text-gray-700">用户名</label>
+            <input type="text" th:field="*{username}" class="w-full p-2 border rounded">
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700">密码</label>
+            <input type="password" th:field="*{password}" class="w-full p-2 border rounded">
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700">邮箱</label>
+            <input type="email" th:field="*{email}" class="w-full p-2 border rounded">
+        </div>
+        <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded">注册</button>
+        <p th:if="${error}" class="text-red-500 mt-4" th:text="${error}"></p>
+    </form>
+    <p class="mt-4 text-center">已有账户? <a href="/login" class="text-blue-600">登录</a></p>
+</div>
+</body>
+</html>

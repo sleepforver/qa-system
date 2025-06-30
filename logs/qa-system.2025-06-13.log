@@ -1,0 +1,305 @@
+2025-06-13 09:08:46 [restartedMain] INFO  c.e.qasystem.QaSystemApplication - Starting QaSystemApplication using Java 17.0.12 with PID 18228 (E:\ai-chat\qa-system\target\classes started by 赤 in E:\ai-chat\qa-system)
+2025-06-13 09:08:46 [restartedMain] DEBUG c.e.qasystem.QaSystemApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-13 09:08:46 [restartedMain] INFO  c.e.qasystem.QaSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-13 09:08:46 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-13 09:08:46 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-13 09:08:47 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2025-06-13 09:08:47 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.example.qasystem'
+2025-06-13 09:08:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-13 09:08:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-06-13 09:08:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2025-06-13 09:08:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-13 09:08:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-06-13 09:08:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2025-06-13 09:08:47 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\ai-chat\qa-system\target\classes\com\example\qasystem\mapper\ChatHistoryMapper.class]
+2025-06-13 09:08:47 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\ai-chat\qa-system\target\classes\com\example\qasystem\mapper\ConversationMapper.class]
+2025-06-13 09:08:47 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\ai-chat\qa-system\target\classes\com\example\qasystem\mapper\UserMapper.class]
+2025-06-13 09:08:47 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'chatHistoryMapper' and 'com.example.qasystem.mapper.ChatHistoryMapper' mapperInterface
+2025-06-13 09:08:47 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'conversationMapper' and 'com.example.qasystem.mapper.ConversationMapper' mapperInterface
+2025-06-13 09:08:47 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.example.qasystem.mapper.UserMapper' mapperInterface
+2025-06-13 09:08:48 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-13 09:08:48 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-13 09:08:48 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-13 09:08:48 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-13 09:08:48 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-13 09:08:48 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1834 ms
+2025-06-13 09:08:48 [restartedMain] WARN  o.a.c.c.C.[Tomcat].[localhost].[/] - Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [D15DE782F03204A6BCAFA464E9657BAA]
+2025-06-13 09:08:48 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-06-13 09:08:48 [restartedMain] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-06-13 09:08:48 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\ai-chat\qa-system\target\classes\mapper\ChatHistoryMapper.xml]'
+2025-06-13 09:08:48 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\ai-chat\qa-system\target\classes\mapper\ConversationMapper.xml]'
+2025-06-13 09:08:48 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\ai-chat\qa-system\target\classes\mapper\UserMapper.xml]'
+2025-06-13 09:08:48 [restartedMain] WARN  o.s.ai.openai.OpenAiChatModel - This constructor is deprecated and will be removed in the next milestone. Please use the OpenAiChatModel.Builder or the new constructor accepting ToolCallingManager instead.
+2025-06-13 09:08:49 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-06-13 09:08:49 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-06-13 09:08:49 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2025-06-13 09:08:49 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-06-13 09:08:50 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-13 09:08:50 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-13 09:08:50 [restartedMain] INFO  c.e.qasystem.QaSystemApplication - Started QaSystemApplication in 4.174 seconds (process running for 4.813)
+2025-06-13 09:09:43 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-13 09:09:43 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-13 09:09:43 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-06-13 09:09:43 [http-nio-8080-exec-1] DEBUG c.e.q.controller.UserController - 显示登录页面
+2025-06-13 09:09:44 [http-nio-8080-exec-7] DEBUG c.e.q.controller.UserController - 显示登录页面
+2025-06-13 09:09:48 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-06-13 09:09:48 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@39d48a67] was not registered for synchronization because synchronization is not active
+2025-06-13 09:09:48 [http-nio-8080-exec-4] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [ConnectionProxyImpl{connectedTime=2025-06-13 09:08:48.651, closeCount=0, lastValidateTimeMillis=2025-06-13 09:08:48.651}] will not be managed by Spring
+2025-06-13 09:09:48 [http-nio-8080-exec-4] DEBUG c.e.q.mapper.UserMapper.findByUser - ==>  Preparing: SELECT * FROM users WHERE username = ?
+2025-06-13 09:09:49 [http-nio-8080-exec-4] DEBUG c.e.q.mapper.UserMapper.findByUser - ==> Parameters: ls1(String)
+2025-06-13 09:09:49 [http-nio-8080-exec-4] DEBUG c.e.q.mapper.UserMapper.findByUser - <==      Total: 1
+2025-06-13 09:09:49 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@39d48a67]
+2025-06-13 09:09:49 [http-nio-8080-exec-5] DEBUG c.e.q.controller.ChatController - 向用户展示聊天界面: ls1
+2025-06-13 09:09:49 [http-nio-8080-exec-5] DEBUG c.e.qasystem.service.UserService - 通过用户名寻找用户: ls1
+2025-06-13 09:09:49 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-06-13 09:09:49 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ef4304a] was not registered for synchronization because synchronization is not active
+2025-06-13 09:09:49 [http-nio-8080-exec-5] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [ConnectionProxyImpl{connectedTime=2025-06-13 09:08:48.651, closeCount=0, lastValidateTimeMillis=2025-06-13 09:08:48.651}] will not be managed by Spring
+2025-06-13 09:09:49 [http-nio-8080-exec-5] DEBUG c.e.q.m.UserMapper.findByUsername - ==>  Preparing: SELECT * FROM users WHERE username = ?
+2025-06-13 09:09:49 [http-nio-8080-exec-5] DEBUG c.e.q.m.UserMapper.findByUsername - ==> Parameters: ls1(String)
+2025-06-13 09:09:49 [http-nio-8080-exec-5] DEBUG c.e.q.m.UserMapper.findByUsername - <==      Total: 1
+2025-06-13 09:09:49 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ef4304a]
+2025-06-13 09:09:49 [http-nio-8080-exec-5] DEBUG c.e.qasystem.service.ChatService - Retrieving chat history for userId: 6
+2025-06-13 09:09:49 [http-nio-8080-exec-8] DEBUG c.e.qasystem.service.UserService - 通过用户名寻找用户: ls1
+2025-06-13 09:09:49 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-06-13 09:09:49 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6d4ba592] was not registered for synchronization because synchronization is not active
+2025-06-13 09:09:49 [http-nio-8080-exec-8] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [ConnectionProxyImpl{connectedTime=2025-06-13 09:08:48.651, closeCount=0, lastValidateTimeMillis=2025-06-13 09:08:48.651}] will not be managed by Spring
+2025-06-13 09:09:49 [http-nio-8080-exec-8] DEBUG c.e.q.m.UserMapper.findByUsername - ==>  Preparing: SELECT * FROM users WHERE username = ?
+2025-06-13 09:09:49 [http-nio-8080-exec-8] DEBUG c.e.q.m.UserMapper.findByUsername - ==> Parameters: ls1(String)
+2025-06-13 09:09:49 [http-nio-8080-exec-8] DEBUG c.e.q.m.UserMapper.findByUsername - <==      Total: 1
+2025-06-13 09:09:49 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6d4ba592]
+2025-06-13 09:10:49 [http-nio-8080-exec-2] INFO  c.e.q.controller.ChatController - 收到用户请求: ls1, 提示词: 我需要知道广州市明天的天气状况
+2025-06-13 09:10:49 [http-nio-8080-exec-2] DEBUG c.e.qasystem.service.UserService - 通过用户名寻找用户: ls1
+2025-06-13 09:10:49 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-06-13 09:10:49 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@554e5ca1] was not registered for synchronization because synchronization is not active
+2025-06-13 09:10:49 [http-nio-8080-exec-2] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [ConnectionProxyImpl{connectedTime=2025-06-13 09:08:48.651, closeCount=0, lastValidateTimeMillis=2025-06-13 09:10:49.896}] will not be managed by Spring
+2025-06-13 09:10:49 [http-nio-8080-exec-2] DEBUG c.e.q.m.UserMapper.findByUsername - ==>  Preparing: SELECT * FROM users WHERE username = ?
+2025-06-13 09:10:49 [http-nio-8080-exec-2] DEBUG c.e.q.m.UserMapper.findByUsername - ==> Parameters: ls1(String)
+2025-06-13 09:10:49 [http-nio-8080-exec-2] DEBUG c.e.q.m.UserMapper.findByUsername - <==      Total: 1
+2025-06-13 09:10:49 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@554e5ca1]
+2025-06-13 09:10:49 [http-nio-8080-exec-2] INFO  c.e.qasystem.service.ChatService - Processing chat request for userId: 6, prompt: 我需要知道广州市明天的天气状况
+2025-06-13 09:10:49 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-06-13 09:10:49 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50a23b13]
+2025-06-13 09:10:49 [http-nio-8080-exec-2] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [ConnectionProxyImpl{connectedTime=2025-06-13 09:08:48.651, closeCount=0, lastValidateTimeMillis=2025-06-13 09:10:49.896}] will be managed by Spring
+2025-06-13 09:10:49 [http-nio-8080-exec-2] DEBUG c.e.q.m.C.findByUserId - ==>  Preparing: SELECT * FROM chat_history WHERE user_id = ? ORDER BY created_at
+2025-06-13 09:10:49 [http-nio-8080-exec-2] DEBUG c.e.q.m.C.findByUserId - ==> Parameters: 6(Long)
+2025-06-13 09:10:49 [http-nio-8080-exec-2] DEBUG c.e.q.m.C.findByUserId - <==      Total: 25
+2025-06-13 09:10:49 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50a23b13]
+2025-06-13 09:10:49 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50a23b13] from current transaction
+2025-06-13 09:10:49 [http-nio-8080-exec-2] DEBUG c.e.q.m.C.insertChatHistory - ==>  Preparing: INSERT INTO chat_history (user_id, user_message, ai_response, version, created_at, conversation_id) VALUES (?, ?, ?,?, ?,?)
+2025-06-13 09:10:50 [http-nio-8080-exec-2] DEBUG c.e.q.m.C.insertChatHistory - ==> Parameters: 6(Long), 我需要知道广州市明天的天气状况(String), null, 19(Long), 2025-06-13T09:10:49.968938400(LocalDateTime), 24(Long)
+2025-06-13 09:10:50 [http-nio-8080-exec-2] DEBUG c.e.q.m.C.insertChatHistory - <==    Updates: 1
+2025-06-13 09:10:50 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50a23b13]
+2025-06-13 09:10:50 [http-nio-8080-exec-2] DEBUG c.e.qasystem.service.ChatService - 保存历史记录: 我需要知道广州市明天的天气状况
+2025-06-13 09:10:50 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50a23b13]
+2025-06-13 09:10:50 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50a23b13]
+2025-06-13 09:10:50 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50a23b13]
+2025-06-13 09:11:11 [boundedElastic-2] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 
+
+2025-06-13 09:11:11 [boundedElastic-2] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 你可以
+2025-06-13 09:11:12 [boundedElastic-2] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 通过以下
+2025-06-13 09:11:12 [boundedElastic-2] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 方式获取
+2025-06-13 09:11:12 [boundedElastic-2] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 广州市明天的
+2025-06-13 09:11:12 [boundedElastic-2] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 准确
+2025-06-13 09:11:12 [boundedElastic-2] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 天气信息
+2025-06-13 09:11:12 [boundedElastic-2] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: ：
+
+1
+2025-06-13 09:11:12 [boundedElastic-2] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: . 
+2025-06-13 09:11:12 [boundedElastic-2] INFO  c.e.qasystem.service.ChatService - Streaming response completed for userId: 6, response: 
+你可以通过以下方式获取广州市明天的准确天气信息：
+
+1. 
+2025-06-13 09:11:12 [boundedElastic-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-06-13 09:11:12 [boundedElastic-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d03a090] was not registered for synchronization because synchronization is not active
+2025-06-13 09:11:12 [boundedElastic-2] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [ConnectionProxyImpl{connectedTime=2025-06-13 09:08:48.651, closeCount=0, lastValidateTimeMillis=2025-06-13 09:10:49.896}] will not be managed by Spring
+2025-06-13 09:11:12 [boundedElastic-2] DEBUG c.e.q.m.C.updateChatHistory - ==>  Preparing: Update chat_history SET ai_response = ? where version = ?
+2025-06-13 09:11:12 [boundedElastic-2] DEBUG c.e.q.m.C.updateChatHistory - ==> Parameters: 
+你可以通过以下方式获取广州市明天的准确天气信息：
+
+1. (String), 19(Long)
+2025-06-13 09:11:12 [boundedElastic-2] DEBUG c.e.q.m.C.updateChatHistory - <==    Updates: 1
+2025-06-13 09:11:12 [boundedElastic-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d03a090]
+2025-06-13 09:11:12 [boundedElastic-2] DEBUG c.e.qasystem.service.ChatService - Updated AI response to chat history
+2025-06-13 09:11:24 [http-nio-8080-exec-5] DEBUG c.e.q.controller.ChatController - 向用户展示聊天界面: ls1
+2025-06-13 09:11:24 [http-nio-8080-exec-5] DEBUG c.e.qasystem.service.UserService - 通过用户名寻找用户: ls1
+2025-06-13 09:11:24 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-06-13 09:11:24 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29e6ab25] was not registered for synchronization because synchronization is not active
+2025-06-13 09:11:24 [http-nio-8080-exec-5] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [ConnectionProxyImpl{connectedTime=2025-06-13 09:08:48.651, closeCount=0, lastValidateTimeMillis=2025-06-13 09:10:49.896}] will not be managed by Spring
+2025-06-13 09:11:24 [http-nio-8080-exec-5] DEBUG c.e.q.m.UserMapper.findByUsername - ==>  Preparing: SELECT * FROM users WHERE username = ?
+2025-06-13 09:11:24 [http-nio-8080-exec-5] DEBUG c.e.q.m.UserMapper.findByUsername - ==> Parameters: ls1(String)
+2025-06-13 09:11:24 [http-nio-8080-exec-5] DEBUG c.e.q.m.UserMapper.findByUsername - <==      Total: 1
+2025-06-13 09:11:24 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@29e6ab25]
+2025-06-13 09:11:24 [http-nio-8080-exec-5] DEBUG c.e.qasystem.service.ChatService - Retrieving chat history for userId: 6
+2025-06-13 09:11:24 [http-nio-8080-exec-10] DEBUG c.e.qasystem.service.UserService - 通过用户名寻找用户: ls1
+2025-06-13 09:11:24 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-06-13 09:11:24 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1a6f7df0] was not registered for synchronization because synchronization is not active
+2025-06-13 09:11:24 [http-nio-8080-exec-10] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [ConnectionProxyImpl{connectedTime=2025-06-13 09:08:48.651, closeCount=0, lastValidateTimeMillis=2025-06-13 09:10:49.896}] will not be managed by Spring
+2025-06-13 09:11:24 [http-nio-8080-exec-10] DEBUG c.e.q.m.UserMapper.findByUsername - ==>  Preparing: SELECT * FROM users WHERE username = ?
+2025-06-13 09:11:24 [http-nio-8080-exec-10] DEBUG c.e.q.m.UserMapper.findByUsername - ==> Parameters: ls1(String)
+2025-06-13 09:11:24 [http-nio-8080-exec-10] DEBUG c.e.q.m.UserMapper.findByUsername - <==      Total: 1
+2025-06-13 09:11:24 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1a6f7df0]
+2025-06-13 09:11:25 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-06-13 09:11:25 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5ab6e329] was not registered for synchronization because synchronization is not active
+2025-06-13 09:11:25 [http-nio-8080-exec-8] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [ConnectionProxyImpl{connectedTime=2025-06-13 09:08:48.651, closeCount=0, lastValidateTimeMillis=2025-06-13 09:10:49.896}] will not be managed by Spring
+2025-06-13 09:11:25 [http-nio-8080-exec-8] DEBUG c.e.q.m.C.findByConversationId - ==>  Preparing: SELECT * FROM chat_history WHERE conversation_id = ?
+2025-06-13 09:11:25 [http-nio-8080-exec-8] DEBUG c.e.q.m.C.findByConversationId - ==> Parameters: 24(Long)
+2025-06-13 09:11:25 [http-nio-8080-exec-8] DEBUG c.e.q.m.C.findByConversationId - <==      Total: 14
+2025-06-13 09:11:25 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5ab6e329]
+2025-06-13 09:13:00 [http-nio-8080-exec-2] INFO  c.e.q.controller.ChatController - 收到用户请求: ls1, 提示词: 继续之前的话题
+2025-06-13 09:13:00 [http-nio-8080-exec-2] DEBUG c.e.qasystem.service.UserService - 通过用户名寻找用户: ls1
+2025-06-13 09:13:00 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-06-13 09:13:00 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@77ae4d2b] was not registered for synchronization because synchronization is not active
+2025-06-13 09:13:00 [http-nio-8080-exec-2] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [ConnectionProxyImpl{connectedTime=2025-06-13 09:08:48.651, closeCount=0, lastValidateTimeMillis=2025-06-13 09:13:00.338}] will not be managed by Spring
+2025-06-13 09:13:00 [http-nio-8080-exec-2] DEBUG c.e.q.m.UserMapper.findByUsername - ==>  Preparing: SELECT * FROM users WHERE username = ?
+2025-06-13 09:13:00 [http-nio-8080-exec-2] DEBUG c.e.q.m.UserMapper.findByUsername - ==> Parameters: ls1(String)
+2025-06-13 09:13:00 [http-nio-8080-exec-2] DEBUG c.e.q.m.UserMapper.findByUsername - <==      Total: 1
+2025-06-13 09:13:00 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@77ae4d2b]
+2025-06-13 09:13:00 [http-nio-8080-exec-2] INFO  c.e.qasystem.service.ChatService - Processing chat request for userId: 6, prompt: 继续之前的话题
+2025-06-13 09:13:00 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-06-13 09:13:00 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f98772c]
+2025-06-13 09:13:00 [http-nio-8080-exec-2] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [ConnectionProxyImpl{connectedTime=2025-06-13 09:08:48.651, closeCount=0, lastValidateTimeMillis=2025-06-13 09:13:00.338}] will be managed by Spring
+2025-06-13 09:13:00 [http-nio-8080-exec-2] DEBUG c.e.q.m.C.findByUserId - ==>  Preparing: SELECT * FROM chat_history WHERE user_id = ? ORDER BY created_at
+2025-06-13 09:13:00 [http-nio-8080-exec-2] DEBUG c.e.q.m.C.findByUserId - ==> Parameters: 6(Long)
+2025-06-13 09:13:00 [http-nio-8080-exec-2] DEBUG c.e.q.m.C.findByUserId - <==      Total: 26
+2025-06-13 09:13:00 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f98772c]
+2025-06-13 09:13:00 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f98772c] from current transaction
+2025-06-13 09:13:00 [http-nio-8080-exec-2] DEBUG c.e.q.m.C.insertChatHistory - ==>  Preparing: INSERT INTO chat_history (user_id, user_message, ai_response, version, created_at, conversation_id) VALUES (?, ?, ?,?, ?,?)
+2025-06-13 09:13:00 [http-nio-8080-exec-2] DEBUG c.e.q.m.C.insertChatHistory - ==> Parameters: 6(Long), 继续之前的话题(String), null, 20(Long), 2025-06-13T09:13:00.347539600(LocalDateTime), 24(Long)
+2025-06-13 09:13:00 [http-nio-8080-exec-2] DEBUG c.e.q.m.C.insertChatHistory - <==    Updates: 1
+2025-06-13 09:13:00 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f98772c]
+2025-06-13 09:13:00 [http-nio-8080-exec-2] DEBUG c.e.qasystem.service.ChatService - 保存历史记录: 继续之前的话题
+2025-06-13 09:13:00 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f98772c]
+2025-06-13 09:13:00 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f98772c]
+2025-06-13 09:13:00 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f98772c]
+2025-06-13 09:13:20 [boundedElastic-4] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 
+
+2025-06-13 09:13:20 [boundedElastic-4] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 好的！
+2025-06-13 09:13:20 [boundedElastic-4] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 我们之前
+2025-06-13 09:13:20 [boundedElastic-4] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 聊到
+2025-06-13 09:13:20 [boundedElastic-4] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 书籍
+2025-06-13 09:13:20 [boundedElastic-4] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 推荐，
+2025-06-13 09:13:20 [boundedElastic-4] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 你
+2025-06-13 09:13:20 [boundedElastic-4] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 提到
+2025-06-13 09:13:20 [boundedElastic-4] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 「
+2025-06-13 09:13:21 [boundedElastic-4] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 给我
+2025-06-13 09:13:21 [boundedElastic-4] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 推荐一本书
+2025-06-13 09:13:21 [boundedElastic-4] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 」，但
+2025-06-13 09:13:21 [boundedElastic-4] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 当时
+2025-06-13 09:13:21 [boundedElastic-4] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 我的
+2025-06-13 09:13:21 [boundedElastic-4] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 回复被
+2025-06-13 09:13:21 [boundedElastic-4] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 意外中断
+2025-06-13 09:13:21 [boundedElastic-4] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 了。
+2025-06-13 09:13:21 [boundedElastic-4] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 现在为你
+2025-06-13 09:13:21 [boundedElastic-4] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 补
+2025-06-13 09:13:21 [boundedElastic-4] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 上精心
+2025-06-13 09:13:22 [boundedElastic-4] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 挑选
+2025-06-13 09:13:22 [boundedElastic-4] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 的书
+2025-06-13 09:13:22 [boundedElastic-4] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 单，
+2025-06-13 09:13:22 [boundedElastic-4] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 涵盖
+2025-06-13 09:13:22 [boundedElastic-4] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 不同风格
+2025-06-13 09:13:22 [boundedElastic-4] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: ，希望
+2025-06-13 09:13:22 [boundedElastic-4] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 有你
+2025-06-13 09:13:23 [boundedElastic-4] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 喜欢的 😊
+
+
+2025-06-13 09:13:23 [boundedElastic-4] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: ---
+
+📚 
+2025-06-13 09:13:23 [boundedElastic-4] INFO  c.e.qasystem.service.ChatService - Streaming response completed for userId: 6, response: 
+好的！我们之前聊到书籍推荐，你提到「给我推荐一本书」，但当时我的回复被意外中断了。现在为你补上精心挑选的书单，涵盖不同风格，希望有你喜欢的 😊
+
+---
+
+📚 
+2025-06-13 09:13:23 [boundedElastic-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-06-13 09:13:23 [boundedElastic-4] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@444deb0b] was not registered for synchronization because synchronization is not active
+2025-06-13 09:13:23 [boundedElastic-4] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [ConnectionProxyImpl{connectedTime=2025-06-13 09:08:48.651, closeCount=0, lastValidateTimeMillis=2025-06-13 09:13:00.338}] will not be managed by Spring
+2025-06-13 09:13:23 [boundedElastic-4] DEBUG c.e.q.m.C.updateChatHistory - ==>  Preparing: Update chat_history SET ai_response = ? where version = ?
+2025-06-13 09:13:23 [boundedElastic-4] DEBUG c.e.q.m.C.updateChatHistory - ==> Parameters: 
+好的！我们之前聊到书籍推荐，你提到「给我推荐一本书」，但当时我的回复被意外中断了。现在为你补上精心挑选的书单，涵盖不同风格，希望有你喜欢的 😊
+
+---
+
+📚 (String), 20(Long)
+2025-06-13 09:13:23 [boundedElastic-4] DEBUG c.e.q.m.C.updateChatHistory - <==    Updates: 1
+2025-06-13 09:13:23 [boundedElastic-4] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@444deb0b]
+2025-06-13 09:13:23 [boundedElastic-4] DEBUG c.e.qasystem.service.ChatService - Updated AI response to chat history
+2025-06-13 09:19:01 [http-nio-8080-exec-6] INFO  c.e.q.controller.ChatController - 收到用户请求: ls1, 提示词: 给我推荐几本科幻书
+2025-06-13 09:19:01 [http-nio-8080-exec-6] DEBUG c.e.qasystem.service.UserService - 通过用户名寻找用户: ls1
+2025-06-13 09:19:01 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-06-13 09:19:01 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@186aac81] was not registered for synchronization because synchronization is not active
+2025-06-13 09:19:01 [http-nio-8080-exec-6] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [ConnectionProxyImpl{connectedTime=2025-06-13 09:08:48.651, closeCount=0, lastValidateTimeMillis=2025-06-13 09:19:01.841}] will not be managed by Spring
+2025-06-13 09:19:01 [http-nio-8080-exec-6] DEBUG c.e.q.m.UserMapper.findByUsername - ==>  Preparing: SELECT * FROM users WHERE username = ?
+2025-06-13 09:19:01 [http-nio-8080-exec-6] DEBUG c.e.q.m.UserMapper.findByUsername - ==> Parameters: ls1(String)
+2025-06-13 09:19:01 [http-nio-8080-exec-6] DEBUG c.e.q.m.UserMapper.findByUsername - <==      Total: 1
+2025-06-13 09:19:01 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@186aac81]
+2025-06-13 09:19:01 [http-nio-8080-exec-6] INFO  c.e.qasystem.service.ChatService - Processing chat request for userId: 6, prompt: 给我推荐几本科幻书
+2025-06-13 09:19:01 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-06-13 09:19:01 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50ca1943]
+2025-06-13 09:19:01 [http-nio-8080-exec-6] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [ConnectionProxyImpl{connectedTime=2025-06-13 09:08:48.651, closeCount=0, lastValidateTimeMillis=2025-06-13 09:19:01.841}] will be managed by Spring
+2025-06-13 09:19:01 [http-nio-8080-exec-6] DEBUG c.e.q.m.C.findByUserId - ==>  Preparing: SELECT * FROM chat_history WHERE user_id = ? ORDER BY created_at
+2025-06-13 09:19:01 [http-nio-8080-exec-6] DEBUG c.e.q.m.C.findByUserId - ==> Parameters: 6(Long)
+2025-06-13 09:19:01 [http-nio-8080-exec-6] DEBUG c.e.q.m.C.findByUserId - <==      Total: 27
+2025-06-13 09:19:01 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50ca1943]
+2025-06-13 09:19:01 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50ca1943] from current transaction
+2025-06-13 09:19:01 [http-nio-8080-exec-6] DEBUG c.e.q.m.C.insertChatHistory - ==>  Preparing: INSERT INTO chat_history (user_id, user_message, ai_response, version, created_at, conversation_id) VALUES (?, ?, ?,?, ?,?)
+2025-06-13 09:19:01 [http-nio-8080-exec-6] DEBUG c.e.q.m.C.insertChatHistory - ==> Parameters: 6(Long), 给我推荐几本科幻书(String), null, 21(Long), 2025-06-13T09:19:01.849756400(LocalDateTime), 24(Long)
+2025-06-13 09:19:01 [http-nio-8080-exec-6] DEBUG c.e.q.m.C.insertChatHistory - <==    Updates: 1
+2025-06-13 09:19:01 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50ca1943]
+2025-06-13 09:19:01 [http-nio-8080-exec-6] DEBUG c.e.qasystem.service.ChatService - 保存历史记录: 给我推荐几本科幻书
+2025-06-13 09:19:01 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50ca1943]
+2025-06-13 09:19:01 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50ca1943]
+2025-06-13 09:19:01 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50ca1943]
+2025-06-13 09:19:24 [boundedElastic-6] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 
+
+2025-06-13 09:19:24 [boundedElastic-6] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 太
+2025-06-13 09:19:24 [boundedElastic-6] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 棒了
+2025-06-13 09:19:24 [boundedElastic-6] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: ！科幻
+2025-06-13 09:19:24 [boundedElastic-6] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 世界
+2025-06-13 09:19:24 [boundedElastic-6] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 充满
+2025-06-13 09:19:24 [boundedElastic-6] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 想象力与
+2025-06-13 09:19:24 [boundedElastic-6] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 思想深度
+2025-06-13 09:19:24 [boundedElastic-6] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: ，以下
+2025-06-13 09:19:24 [boundedElastic-6] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 是我为你
+2025-06-13 09:19:24 [boundedElastic-6] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 精心挑选
+2025-06-13 09:19:24 [boundedElastic-6] DEBUG c.e.qasystem.service.ChatService - Received streaming response chunk: 的 
+2025-06-13 09:19:24 [boundedElastic-6] INFO  c.e.qasystem.service.ChatService - Streaming response completed for userId: 6, response: 
+太棒了！科幻世界充满想象力与思想深度，以下是我为你精心挑选的 
+2025-06-13 09:19:24 [boundedElastic-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-06-13 09:19:24 [boundedElastic-6] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cbf5961] was not registered for synchronization because synchronization is not active
+2025-06-13 09:19:24 [boundedElastic-6] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [ConnectionProxyImpl{connectedTime=2025-06-13 09:08:48.651, closeCount=0, lastValidateTimeMillis=2025-06-13 09:19:01.841}] will not be managed by Spring
+2025-06-13 09:19:24 [boundedElastic-6] DEBUG c.e.q.m.C.updateChatHistory - ==>  Preparing: Update chat_history SET ai_response = ? where version = ?
+2025-06-13 09:19:24 [boundedElastic-6] DEBUG c.e.q.m.C.updateChatHistory - ==> Parameters: 
+太棒了！科幻世界充满想象力与思想深度，以下是我为你精心挑选的 (String), 21(Long)
+2025-06-13 09:19:24 [boundedElastic-6] DEBUG c.e.q.m.C.updateChatHistory - <==    Updates: 1
+2025-06-13 09:19:24 [boundedElastic-6] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cbf5961]
+2025-06-13 09:19:24 [boundedElastic-6] DEBUG c.e.qasystem.service.ChatService - Updated AI response to chat history
+2025-06-13 09:19:43 [http-nio-8080-exec-8] DEBUG c.e.q.controller.ChatController - 向用户展示聊天界面: ls1
+2025-06-13 09:19:43 [http-nio-8080-exec-8] DEBUG c.e.qasystem.service.UserService - 通过用户名寻找用户: ls1
+2025-06-13 09:19:43 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-06-13 09:19:43 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1953b86e] was not registered for synchronization because synchronization is not active
+2025-06-13 09:19:43 [http-nio-8080-exec-8] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [ConnectionProxyImpl{connectedTime=2025-06-13 09:08:48.651, closeCount=0, lastValidateTimeMillis=2025-06-13 09:19:01.841}] will not be managed by Spring
+2025-06-13 09:19:43 [http-nio-8080-exec-8] DEBUG c.e.q.m.UserMapper.findByUsername - ==>  Preparing: SELECT * FROM users WHERE username = ?
+2025-06-13 09:19:43 [http-nio-8080-exec-8] DEBUG c.e.q.m.UserMapper.findByUsername - ==> Parameters: ls1(String)
+2025-06-13 09:19:43 [http-nio-8080-exec-8] DEBUG c.e.q.m.UserMapper.findByUsername - <==      Total: 1
+2025-06-13 09:19:43 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1953b86e]
+2025-06-13 09:19:43 [http-nio-8080-exec-8] DEBUG c.e.qasystem.service.ChatService - Retrieving chat history for userId: 6
+2025-06-13 09:19:43 [http-nio-8080-exec-2] DEBUG c.e.qasystem.service.UserService - 通过用户名寻找用户: ls1
+2025-06-13 09:19:43 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-06-13 09:19:43 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41b6bbfc] was not registered for synchronization because synchronization is not active
+2025-06-13 09:19:43 [http-nio-8080-exec-2] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [ConnectionProxyImpl{connectedTime=2025-06-13 09:08:48.651, closeCount=0, lastValidateTimeMillis=2025-06-13 09:19:01.841}] will not be managed by Spring
+2025-06-13 09:19:43 [http-nio-8080-exec-2] DEBUG c.e.q.m.UserMapper.findByUsername - ==>  Preparing: SELECT * FROM users WHERE username = ?
+2025-06-13 09:19:43 [http-nio-8080-exec-2] DEBUG c.e.q.m.UserMapper.findByUsername - ==> Parameters: ls1(String)
+2025-06-13 09:19:43 [http-nio-8080-exec-2] DEBUG c.e.q.m.UserMapper.findByUsername - <==      Total: 1
+2025-06-13 09:19:43 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@41b6bbfc]
+2025-06-13 09:19:45 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-06-13 09:19:45 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b5e33ae] was not registered for synchronization because synchronization is not active
+2025-06-13 09:19:45 [http-nio-8080-exec-7] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [ConnectionProxyImpl{connectedTime=2025-06-13 09:08:48.651, closeCount=0, lastValidateTimeMillis=2025-06-13 09:19:01.841}] will not be managed by Spring
+2025-06-13 09:19:45 [http-nio-8080-exec-7] DEBUG c.e.q.m.C.findByConversationId - ==>  Preparing: SELECT * FROM chat_history WHERE conversation_id = ?
+2025-06-13 09:19:45 [http-nio-8080-exec-7] DEBUG c.e.q.m.C.findByConversationId - ==> Parameters: 24(Long)
+2025-06-13 09:19:45 [http-nio-8080-exec-7] DEBUG c.e.q.m.C.findByConversationId - <==      Total: 16
+2025-06-13 09:19:45 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b5e33ae]
+2025-06-13 09:33:08 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-13 09:33:08 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-13 09:33:08 [SpringApplicationShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-06-13 09:33:08 [SpringApplicationShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

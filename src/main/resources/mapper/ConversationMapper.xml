@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.qasystem.mapper.ConversationMapper">
+    <insert id="insertConversation" keyProperty="id" useGeneratedKeys="true">
+        INSERT INTO conversation (user_id, name, start_time,update_time)
+        VALUES
+            (#{userId}, #{name}, #{startTime},#{updateTime})
+    </insert>
+    <update id="updateConversation">
+        UPDATE conversation
+        <set>
+            <if test="name != null">
+                name = #{name},
+            </if>
+            <if test="startTime != null">
+                start_time = #{startTime},
+            </if>
+        </set>
+        WHERE id = #{id}
+    </update>
+    <select id="findByUserId" resultType="com.example.qasystem.model.Conversation">
+        SELECT * FROM conversation WHERE user_id = #{userId}
+    </select>
+    <select id="findById" resultType="com.example.qasystem.model.Conversation">
+        SELECT * FROM conversation WHERE id = #{id} order by update_time
+    </select>
+
+    <delete id="deleteConversationById">
+        DELETE FROM conversation WHERE id = #{id}
+    </delete>
+</mapper>

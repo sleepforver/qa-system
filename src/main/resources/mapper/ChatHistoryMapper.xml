@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.qasystem.mapper.ChatHistoryMapper">
+    <insert id="insertChatHistory" parameterType="com.example.qasystem.model.ChatHistory">
+        INSERT INTO chat_history (user_id, user_message, ai_response, version, created_at, conversation_id)
+        VALUES (#{userId}, #{userMessage}, #{aiResponse},#{version}, #{createdAt},#{conversationId})
+    </insert>
+    <update id="updateChatHistory">
+        Update chat_history
+        <set>
+            <if test="aiResponse != null">
+                ai_response = #{aiResponse},
+            </if>
+        </set>
+        where version = #{version}
+    </update>
+    <select id="findByUserId" resultType="com.example.qasystem.model.ChatHistory">
+        SELECT * FROM chat_history WHERE user_id = #{userId} ORDER BY created_at
+    </select>
+    <select id="findByConversationId" resultType="com.example.qasystem.model.ChatHistory">
+        SELECT * FROM chat_history WHERE conversation_id = #{conversationId}
+    </select>
+
+    <delete id="deleteByConversationId">
+        DELETE FROM chat_history WHERE conversation_id = #{conversationId}
+    </delete>
+</mapper>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>智能问答系统</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+<nav class="bg-blue-600 text-white p-4">
+    <div class="container mx-auto flex justify-between">
+        <a href="/chat" class="text-lg font-bold">智能问答系统</a>
+        <div>
+            <span th:text="${#authentication.name}">用户</span>
+            <a href="/logout" class="ml-4">登出</a>
+        </div>
+    </div>
+</nav>
+<div th:replace="~{::content}"></div>
+<script th:src="@{/js/chat.js}"></script>
+</body>
+</html>
