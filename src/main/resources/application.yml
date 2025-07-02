@@ -1,0 +1,102 @@
+spring:
+  application:
+    name: qa-system
+  ai:
+    openai:
+      base-url: https://api.siliconflow.cn/
+      api-key:
+      chat:
+        options:
+          model: deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
+          temperature: 0.3
+          max-tokens: 500
+          stream-usage: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/qa_system?useSSL=false&serverTimezone=UTC
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    druid:
+      initial-size: 5
+      min-idle: 5
+      max-active: 20
+      max-wait: 60000
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      validation-query: SELECT 1
+      test-while-idle: true
+      test-when-idle: false
+      filters: stat,wall,slf4j
+      stat-view-servlet:
+        enabled: true
+        url-pattern: /druid/*
+        login-username: admin
+        login-password: admin
+        reset-enable: false
+      filter:
+        stat:
+          enabled: true
+          log-slow-sql-millis: 1000
+          slow-sql-millis: 2000
+          merge-sql: true
+        wall:
+          enabled: true
+          config:
+            select-where: true
+    stat-view-servlet:
+      # 访问白名单
+      allow: 127.0.0.1
+      # 配置统计页面
+      enabled: true
+      # 访问密码
+      login-password: 123456
+      # 访问用户名
+      login-username: root
+      # 允许重置监控数据
+      reset-enable: true
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML
+    cache: false
+  data:
+    redis:
+      # 地址
+      host:
+      # 端口，默认为6379
+      port: 6379
+      # 数据库索引
+      database: 3
+      # 密码
+      password:
+      # 连接超时时间
+      timeout: 10s
+      lettuce:
+        pool:
+          # 连接池中的最小空闲连接
+          min-idle: 0
+          # 连接池中的最大空闲连接
+          max-idle: 8
+          # 连接池的最大数据库连接数
+          max-active: 8
+          # #连接池最大阻塞等待时间（使用负值表示没有限制）
+          max-wait: -1ms
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.example.qasystem.model
+  configuration:
+    map-underscore-to-camel-case: true
+server:
+  port: 8080
+logging:
+  level:
+    root: INFO
+    com.example.qasystem: DEBUG
+    org.springframework: INFO
+    org.mybatis: DEBUG
+  file:
+    name: logs/qa-system.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
