@@ -135,3 +135,111 @@ Caused by: java.lang.IllegalArgumentException: 'host' must not be empty
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171)
 	... 69 common frames omitted
+2025-07-02 09:51:23 [restartedMain] INFO  c.e.qasystem.QaSystemApplication - Starting QaSystemApplication using Java 17.0.12 with PID 93208 (E:\ai-chat\qa-system\target\classes started by 赤 in E:\ai-chat\qa-system)
+2025-07-02 09:51:23 [restartedMain] DEBUG c.e.qasystem.QaSystemApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-07-02 09:51:23 [restartedMain] INFO  c.e.qasystem.QaSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-02 09:51:23 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-02 09:51:23 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-02 09:51:23 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2025-07-02 09:51:23 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.example.qasystem'
+2025-07-02 09:51:24 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-02 09:51:24 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-07-02 09:51:24 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 JDBC repository interfaces.
+2025-07-02 09:51:24 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-02 09:51:24 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-02 09:51:24 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2025-07-02 09:51:24 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\ai-chat\qa-system\target\classes\com\example\qasystem\mapper\ChatHistoryMapper.class]
+2025-07-02 09:51:24 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\ai-chat\qa-system\target\classes\com\example\qasystem\mapper\ConversationMapper.class]
+2025-07-02 09:51:24 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\ai-chat\qa-system\target\classes\com\example\qasystem\mapper\UserMapper.class]
+2025-07-02 09:51:24 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'chatHistoryMapper' and 'com.example.qasystem.mapper.ChatHistoryMapper' mapperInterface
+2025-07-02 09:51:24 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'conversationMapper' and 'com.example.qasystem.mapper.ConversationMapper' mapperInterface
+2025-07-02 09:51:24 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'userMapper' and 'com.example.qasystem.mapper.UserMapper' mapperInterface
+2025-07-02 09:51:24 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-07-02 09:51:24 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-02 09:51:24 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-02 09:51:24 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-07-02 09:51:24 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-02 09:51:24 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1309 ms
+2025-07-02 09:51:24 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-07-02 09:51:25 [restartedMain] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-07-02 09:51:25 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\ai-chat\qa-system\target\classes\mapper\ChatHistoryMapper.xml]'
+2025-07-02 09:51:25 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\ai-chat\qa-system\target\classes\mapper\ConversationMapper.xml]'
+2025-07-02 09:51:25 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\ai-chat\qa-system\target\classes\mapper\UserMapper.xml]'
+2025-07-02 09:51:25 [restartedMain] WARN  o.s.ai.openai.OpenAiChatModel - This constructor is deprecated and will be removed in the next milestone. Please use the OpenAiChatModel.Builder or the new constructor accepting ToolCallingManager instead.
+2025-07-02 09:51:25 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-07-02 09:51:25 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-07-02 09:51:26 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2025-07-02 09:51:26 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-07-02 09:51:26 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-07-02 09:51:26 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-07-02 09:51:26 [restartedMain] INFO  c.e.qasystem.QaSystemApplication - Started QaSystemApplication in 3.573 seconds (process running for 4.128)
+2025-07-02 09:51:36 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-02 09:51:36 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-02 09:51:36 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-07-02 09:51:36 [http-nio-8080-exec-1] DEBUG c.e.q.controller.UserController - 显示登录页面
+2025-07-02 09:51:38 [http-nio-8080-exec-10] DEBUG c.e.q.controller.UserController - 显示登录页面
+2025-07-02 09:51:42 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-07-02 09:51:42 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11cfa542] was not registered for synchronization because synchronization is not active
+2025-07-02 09:51:42 [http-nio-8080-exec-7] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [ConnectionProxyImpl{connectedTime=2025-07-02 09:51:25.047, closeCount=0, lastValidateTimeMillis=2025-07-02 09:51:25.048}] will not be managed by Spring
+2025-07-02 09:51:42 [http-nio-8080-exec-7] DEBUG c.e.q.mapper.UserMapper.findByUser - ==>  Preparing: SELECT * FROM users WHERE username = ?
+2025-07-02 09:51:43 [http-nio-8080-exec-7] DEBUG c.e.q.mapper.UserMapper.findByUser - ==> Parameters: ls1(String)
+2025-07-02 09:51:43 [http-nio-8080-exec-7] DEBUG c.e.q.mapper.UserMapper.findByUser - <==      Total: 1
+2025-07-02 09:51:43 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11cfa542]
+2025-07-02 09:51:43 [http-nio-8080-exec-5] DEBUG c.e.q.controller.ChatController - 向用户展示聊天界面: ls1
+2025-07-02 09:51:43 [http-nio-8080-exec-5] DEBUG c.e.qasystem.service.UserService - 通过用户名寻找用户: ls1
+2025-07-02 09:51:43 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-07-02 09:51:43 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@60063fba] was not registered for synchronization because synchronization is not active
+2025-07-02 09:51:43 [http-nio-8080-exec-5] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [ConnectionProxyImpl{connectedTime=2025-07-02 09:51:25.047, closeCount=0, lastValidateTimeMillis=2025-07-02 09:51:25.048}] will not be managed by Spring
+2025-07-02 09:51:43 [http-nio-8080-exec-5] DEBUG c.e.q.m.UserMapper.findByUsername - ==>  Preparing: SELECT * FROM users WHERE username = ?
+2025-07-02 09:51:43 [http-nio-8080-exec-5] DEBUG c.e.q.m.UserMapper.findByUsername - ==> Parameters: ls1(String)
+2025-07-02 09:51:43 [http-nio-8080-exec-5] DEBUG c.e.q.m.UserMapper.findByUsername - <==      Total: 1
+2025-07-02 09:51:43 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@60063fba]
+2025-07-02 09:51:43 [http-nio-8080-exec-5] DEBUG c.e.qasystem.service.ChatService - Retrieving chat history for userId: 6
+2025-07-02 09:51:43 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-07-02 09:51:43 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@100932ee] was not registered for synchronization because synchronization is not active
+2025-07-02 09:51:43 [http-nio-8080-exec-5] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [ConnectionProxyImpl{connectedTime=2025-07-02 09:51:25.047, closeCount=0, lastValidateTimeMillis=2025-07-02 09:51:25.048}] will not be managed by Spring
+2025-07-02 09:51:43 [http-nio-8080-exec-5] DEBUG c.e.q.m.C.findByUserId - ==>  Preparing: SELECT * FROM chat_history WHERE user_id = ? ORDER BY created_at
+2025-07-02 09:51:43 [http-nio-8080-exec-5] DEBUG c.e.q.m.C.findByUserId - ==> Parameters: 6(Long)
+2025-07-02 09:51:43 [http-nio-8080-exec-5] DEBUG c.e.q.m.C.findByUserId - <==      Total: 58
+2025-07-02 09:51:43 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@100932ee]
+2025-07-02 09:51:43 [http-nio-8080-exec-5] INFO  c.e.qasystem.service.ChatService - Retrieved 58 chat history entries for userId: 6
+2025-07-02 09:51:43 [http-nio-8080-exec-2] DEBUG c.e.qasystem.service.UserService - 通过用户名寻找用户: ls1
+2025-07-02 09:51:43 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-07-02 09:51:43 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f247d1d] was not registered for synchronization because synchronization is not active
+2025-07-02 09:51:43 [http-nio-8080-exec-2] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [ConnectionProxyImpl{connectedTime=2025-07-02 09:51:25.047, closeCount=0, lastValidateTimeMillis=2025-07-02 09:51:25.048}] will not be managed by Spring
+2025-07-02 09:51:43 [http-nio-8080-exec-2] DEBUG c.e.q.m.UserMapper.findByUsername - ==>  Preparing: SELECT * FROM users WHERE username = ?
+2025-07-02 09:51:43 [http-nio-8080-exec-2] DEBUG c.e.q.m.UserMapper.findByUsername - ==> Parameters: ls1(String)
+2025-07-02 09:51:43 [http-nio-8080-exec-2] DEBUG c.e.q.m.UserMapper.findByUsername - <==      Total: 1
+2025-07-02 09:51:43 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f247d1d]
+2025-07-02 09:51:43 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-07-02 09:51:43 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27523e48] was not registered for synchronization because synchronization is not active
+2025-07-02 09:51:43 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-07-02 09:51:43 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a766d87] was not registered for synchronization because synchronization is not active
+2025-07-02 09:51:43 [http-nio-8080-exec-10] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [ConnectionProxyImpl{connectedTime=2025-07-02 09:51:25.047, closeCount=0, lastValidateTimeMillis=2025-07-02 09:51:25.048}] will not be managed by Spring
+2025-07-02 09:51:43 [http-nio-8080-exec-2] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [ConnectionProxyImpl{connectedTime=2025-07-02 09:51:25.044, closeCount=0, lastValidateTimeMillis=2025-07-02 09:51:25.044}] will not be managed by Spring
+2025-07-02 09:51:43 [http-nio-8080-exec-2] DEBUG c.e.q.m.C.findByUserId - ==>  Preparing: SELECT * FROM conversation WHERE user_id = ?
+2025-07-02 09:51:43 [http-nio-8080-exec-10] DEBUG c.e.q.m.C.findByConversationId - ==>  Preparing: SELECT * FROM chat_history WHERE conversation_id = ?
+2025-07-02 09:51:43 [http-nio-8080-exec-2] DEBUG c.e.q.m.C.findByUserId - ==> Parameters: 6(Long)
+2025-07-02 09:51:43 [http-nio-8080-exec-10] DEBUG c.e.q.m.C.findByConversationId - ==> Parameters: 12(Long)
+2025-07-02 09:51:43 [http-nio-8080-exec-10] DEBUG c.e.q.m.C.findByConversationId - <==      Total: 1
+2025-07-02 09:51:43 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27523e48]
+2025-07-02 09:51:43 [http-nio-8080-exec-2] DEBUG c.e.q.m.C.findByUserId - <==      Total: 10
+2025-07-02 09:51:43 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a766d87]
+2025-07-02 09:51:47 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-07-02 09:51:47 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b814edf] was not registered for synchronization because synchronization is not active
+2025-07-02 09:51:47 [http-nio-8080-exec-3] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [ConnectionProxyImpl{connectedTime=2025-07-02 09:51:25.044, closeCount=0, lastValidateTimeMillis=2025-07-02 09:51:25.044}] will not be managed by Spring
+2025-07-02 09:51:47 [http-nio-8080-exec-3] DEBUG c.e.q.m.C.findByConversationId - ==>  Preparing: SELECT * FROM chat_history WHERE conversation_id = ?
+2025-07-02 09:51:47 [http-nio-8080-exec-3] DEBUG c.e.q.m.C.findByConversationId - ==> Parameters: 13(Long)
+2025-07-02 09:51:47 [http-nio-8080-exec-3] DEBUG c.e.q.m.C.findByConversationId - <==      Total: 3
+2025-07-02 09:51:47 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b814edf]
+2025-07-02 09:51:48 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-07-02 09:51:48 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10f06cad] was not registered for synchronization because synchronization is not active
+2025-07-02 09:51:48 [http-nio-8080-exec-5] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [ConnectionProxyImpl{connectedTime=2025-07-02 09:51:25.044, closeCount=0, lastValidateTimeMillis=2025-07-02 09:51:25.044}] will not be managed by Spring
+2025-07-02 09:51:48 [http-nio-8080-exec-5] DEBUG c.e.q.m.C.findByConversationId - ==>  Preparing: SELECT * FROM chat_history WHERE conversation_id = ?
+2025-07-02 09:51:48 [http-nio-8080-exec-5] DEBUG c.e.q.m.C.findByConversationId - ==> Parameters: 14(Long)
+2025-07-02 09:51:48 [http-nio-8080-exec-5] DEBUG c.e.q.m.C.findByConversationId - <==      Total: 13
+2025-07-02 09:51:48 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10f06cad]
+2025-07-02 09:55:17 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-02 09:55:17 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-07-02 09:55:17 [SpringApplicationShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-07-02 09:55:17 [SpringApplicationShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
