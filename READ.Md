@@ -13,28 +13,34 @@ AI集成: Spring AI, OpenAI API
 
 项目结构
 com.example.qasystem
-├── config
-│   ├── ModelProperties.java        # AI模型配置
-│   ├── RedisConfig.java           # Redis配置
-│   └── SecurityConfig.java        # Spring Security配置
-├── controller
-│   ├── ChatController.java        # 聊天相关控制器
-│   └── UserController.java        # 用户相关控制器
-├── mapper
-│   ├── ChatHistoryMapper.java     # 聊天历史数据库操作
-│   ├── ConversationMapper.java    # 会话数据库操作
-│   └── UserMapper.java            # 用户数据库操作
-├── model
-│   ├── ChatHistory.java           # 聊天历史实体
-│   ├── Conversation.java          # 会话实体
-│   ├── User.java                  # 用户实体
-│   └── dto
-│       └── ConversationSummary.java # 会话摘要DTO
-├── security
-│   └── CustomUserDetails.java     # 自定义用户详情
-└── service
-├── ChatService.java           # 聊天服务
-└── UserService.java           # 用户服务
+├── 📁 config               # 配置层
+│   ├── ⚙️ ModelProperties.java    # AI模型参数配置
+│   ├── ⚙️ RedisConfig.java        # Redis连接池配置
+│   └── ⚙️ SecurityConfig.java     # Spring Security配置
+│
+├── 📁 controller          # 控制层
+│   ├── 🎮 ChatController.java     # 聊天API端点
+│   └── 🎮 UserController.java     # 用户管理API
+│
+├── 📁 mapper              # 数据访问层
+│   ├── 💾 ChatHistoryMapper.java  # 聊天记录CRUD
+│   ├── 💾 ConversationMapper.java # 会话管理Mapper
+│   └── 💾 UserMapper.java         # 用户数据Mapper
+│
+├── 📁 model               # 数据模型层
+│   ├── 🧱 ChatHistory.java        # 聊天记录实体
+│   ├── 🧱 Conversation.java       # 会话实体
+│   ├── 🧱 User.java               # 用户实体
+│   │
+│   └── 📁 dto             # 数据传输对象
+│       └── 📦 ConversationSummary.java  # 会话摘要DTO
+│
+├── 📁 security           # 安全模块
+│   └── 🔒 CustomUserDetails.java  # 用户认证详情实现
+│
+└── 📁 service            # 业务逻辑层
+├── 🔧 ChatService.java        # 聊天核心业务逻辑
+└── 🔧 UserService.java        # 用户管理服务
 
 功能模块
 用户管理
@@ -98,3 +104,5 @@ OpenAI API密钥需有效，且网络可访问OpenAI服务。
 集成更多AI模型。
 添加用户个性化设置。
 
+具体运行效果
+![img.png](img.png)
